@@ -1,3 +1,40 @@
+:root {
+  --pale-blue:  hsl(225, 100%, 94%)
+  --bright-blue:  hsl(245, 75%, 52%)
+  --vary-pale-blue:  hsl(225, 100%, 98%)
+  --dessaturated-blue: hsl(224, 23%, 55%)
+  --dark-blue: hsl(223, 47%, 23%)
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+
+.card {
+  width: 90vw;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__header img {
+  width: 100%;
+}
+
+
+.holder {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.holder a {
+  margin-left: auto;
+}
+
 /* Attribution */
 
 .attribution {
