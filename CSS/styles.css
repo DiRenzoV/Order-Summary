@@ -1,19 +1,50 @@
 :root {
-  --pale-blue:  hsl(225, 100%, 94%)
-  --bright-blue:  hsl(245, 75%, 52%)
-  --vary-pale-blue:  hsl(225, 100%, 98%)
-  --dessaturated-blue: hsl(224, 23%, 55%)
-  --dark-blue: hsl(223, 47%, 23%)
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --dessaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   display: grid;
   place-items: center;
+  background: var(--pale-blue);
+  font-size: 16px;
+  height: 150vh;
 }
 
+/* Typography */
+
+.plan__name,
+button,
+h1 {
+  font-weight: 900;
+}
+
+.plan__price,
+a,
+p {
+  font-weight: 700;
+}
+
+p {
+  color: var(--dessaturated-blue);
+}
+
+ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.plan__price {
+  opacity: 80%;
+  color: var(--dessaturated-blue);
+}
 
 .card {
+  background: white;
   width: 90vw;
   border-radius: 20px;
   overflow: hidden;
@@ -24,8 +55,15 @@ body {
   width: 100%;
 }
 
+.card__body {
+  padding: 1rem 2rem;
+}
 
 .holder {
+  background: var(--very-pale-blue);
+  padding: 1.5rem 1rem;
+  margin: 1rem auto;
+  border-radius: 15px;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -35,6 +73,26 @@ body {
   margin-left: auto;
 }
 
+/* Buttons */
+
+button {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin: 5px;
+  border: 0;
+}
+
+.btn--primary {
+  background: var(--bright-blue);
+  color: white;
+  box-shadow: 1px 2px 20px 12px var(--pale-blue);
+}
+
+.btn--invisible {
+  background: none;
+  color: var(--dessaturated-blue);
+}
 /* Attribution */
 
 .attribution {
