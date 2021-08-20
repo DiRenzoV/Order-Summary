@@ -84,6 +84,7 @@ button {
   border-radius: 15px;
   margin: 5px;
   border: 0;
+  transition: 0.3s ease-out;
 }
 
 button:hover {
@@ -97,7 +98,7 @@ button:hover {
 }
 
 .btn--primary:hover {
-  background: rgb(118, 118, 247);
+  background: rgb(96, 96, 255);
 }
 
 .btn--invisible {
